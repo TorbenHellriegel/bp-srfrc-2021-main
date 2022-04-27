@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# PyCharm
+.idea/
+
+#
+*.txt
+!setup.txt
+
+# Sphinx
+docs/_build/
+
+# Environments
+.env
+.venv
+env/
+venv/
+linuxvenv/
+
+#Dataset
+speech_commands_v0.02/
+resources/
+resources/Default/
+resources/Default/LICENSE
+resources/Default/README.md
+resources/Default/_background_noise_/README.md
+.wav
+
+# Mac files
+.DS_Store
+
+# Template data
+template_data/
+template.json
+template.npz
+
+# Data
+data/
+*.wav
+
+#PyCharm
+.idea/
+
+#Visual Studio Code Live Share
+.vsls.json
+
+#Pytest
+.pytest_cache/

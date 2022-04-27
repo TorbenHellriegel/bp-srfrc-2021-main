@@ -1,0 +1,46 @@
+Create folder "resources" if it doesn't exist.
+
+Download "Speech Commands Dataset v0.02" and extract them.
+Move the extracted folder to the "resources" folder and rename "Speech Commands Dataset v0.02" to "Default".
+
+If you want to add templates for specific users, add a folder with the name of the person, e.g. "Felix" inside "resources".
+Inside of this folder, there has to be the same folder structure as inside of the "Default" folder.
+You also need a "testing_list.txt" inside of the new "Felix" folder.
+"save_recording.py" may sometimes help you, depending on how your data is structured.
+Example:
+
+resources
+|- Default
+  |- down
+    |- 00b01445_nohash_0.wav
+    |- 00b01445_nohash_1.wav
+    ...
+  |- up
+    |- 00b01445_nohash_0.wav
+    |- 00b01445_nohash_1.wav
+    ...
+  ...
+  |- testing_list.txt
+|- Felix
+  |- down
+    |- felix00_nohash_0.wav
+    |- felix00_nohash_1.wav
+  |- up
+    |- felix01_nohash_0.wav
+    |- felix01_nohash_1.wav
+  ...
+  |- testing_list.txt
+
+-----------------------------------------------------------------
+There should allready be a "testing_list.txt" inside of the Default folder. You also need to create a similar file if you have a specific user.
+"save_recording.py" can help you, if your folders are allready structured correctly.
+Example testing_list.txt inside felix folder:
+
+down/felix00_nohash_0.wav
+down/felix00_nohash_1.wav
+eight/felix01_nohash_0.wav
+eight/felix01_nohash_1.wav
+five/felix02_nohash_0.wav
+five/felix02_nohash_1.wav
+four/felix03_nohash_0.wav
+four/felix03_nohash_1.wav
